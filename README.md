@@ -18,7 +18,7 @@ Building your OpenWrt project using GitHub Actions
 
 基础配置文件基于intel x64架构，提供grub和efi两种bios启动方式，固定root分区大小为300M
 
-openwrt内核版本为19.07稳定版，luci版本使用18.06
+openwrt内核版本为19.07稳定版，luci版本使用17.01
 
 目录：
 
@@ -32,9 +32,9 @@ openwrt内核版本为19.07稳定版，luci版本使用18.06
 
 - luci主题增加argon, argon-light(green), argon-dark(purple), rosy等
 
-- Luci-app: **ADH**, **Adbyby+**, Autoreboot, **Baidupcs-web**, Cshark(云抓包方便排错), DDNS(aliyun, cloudflare, dnspod), Filetransfer(方便安装.ipk), Fileassistant, **Frpc**, KMS, MiniDLNA, Noddos(已废除), Samba3, SFTP, **SmartDNS**, TurboAcc, **U-Netease-Music**, **Xunlei-Acc**
+- Luci-app: **ADH**, **Adbyby+**, Autoreboot, **Baidupcs-web**, CIFS-Server, **Dockerman**, Tcpdump(可视化抓包), DDNS(aliyun, cloudflare, dnspod), Filetransfer(方便安装.ipk), Fileassistant, **NPS**(替换frpc), KMS, MiniDLNA, Samba3, SFTP, **SmartDNS**, TurboAcc, **U-Netease-Music**
 
-- **Passwall(包含所有依赖，需要自动安装luci-app-passwall)**, **Zerotier**, VPN servers[trojan-server, v2ray-server, IPSec-server, Openconnect-server, OpenVPN-server, Softether-server]
+- **Passwall(包含所有依赖，需要自行安装luci-app-passwall)**, **Zerotier**, VPN servers[trojan-server, v2ray-server, IPSec-server, Openconnect-server, OpenVPN-server, Softether-server]
 
 - 一些命令行工具: curl, wget, gzip, tar, nano, screen, findutils, mountutils, **open-vm-tools**等
 
